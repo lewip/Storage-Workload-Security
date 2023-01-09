@@ -13,7 +13,6 @@ $i++
 
 #run Ransomware simulator
 #Before you run the simulator, open a file to see if the activity is recorded on CloudSecure
- 
 Write-Host ""
 Write-Host "Simulating Ransom attack..."
 Write-Host ""
