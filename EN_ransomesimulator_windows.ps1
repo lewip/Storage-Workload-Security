@@ -1,8 +1,8 @@
 #STOP ONTAP DataCollector
 #Before you run below create files command, please ensure that ONTAP DataCollector is stopped
 
-#create files
-#create 5000 dummy .txt files
+#Create files
+#Create 5000 dummy .txt files
 $files="\\IP_address\share_name\"
 while ($i -le 5000) {
 add-content -path $files$i.txt -value "ransomware simulation test"
@@ -11,7 +11,7 @@ $i++
 
 #START ONTAP DataCollector
 
-#run Ransomware simulator
+#Run Ransomware simulator
 #Before you run the simulator, open a file to see if the activity is recorded on CloudSecure
 Write-Host ""
 Write-Host "Simulating Ransom attack..."
