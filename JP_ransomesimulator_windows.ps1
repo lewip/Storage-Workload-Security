@@ -1,13 +1,11 @@
-#STOP DSC
+#データコレクタを停止してください
 #下記 create files コマンドを実施する前に、必ずデータコレクタを止めてください
 
 #create files
 #ダミーファイルを作成します
-$files="\\10.146.15.205\lewisV_share\xxx\"
-1..500 | foreach { new-item -path $files$_.txt }
-# write something to files or it wont "read"
+$files="\\xxx.xxx.xxx.xxx\xxx\"
 $i = 1
-while ($i -le 500) {
+while ($i -le 5000) {
 add-content -path $files$i.txt -value "ransom test"
 $i++
 }
@@ -16,7 +14,7 @@ $i++
 #データコレクタを開始してください
 
 #run Ransomware simulator
-#ランサム攻撃のシミューレーションテストを実施します
+#下記　ランサム攻撃のシミューレーションテストを実施します
  
 Write-Host ""
 Write-Host "Simulating Ransom attack..."
