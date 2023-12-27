@@ -6,7 +6,7 @@
 #$files="\\xxx.xxx.xxx.xxx\xxx\"
 $files="\\xxx.xxx.xxx.xxx\xxx\"
 $i = 1
-while ($i -le 5000) {
+while ($i -le 6000) {
 add-content -path $files$i.txt -value "ransom test"
 $i++
 }
